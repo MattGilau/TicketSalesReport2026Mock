@@ -50,6 +50,12 @@ Lowest season: 180
 
 Claude (Anthropic, 2026) was used before the exam to prepare study notes, practice memos and code templates. The code in this repository was typed and tested by me.
 
+## How to cite this repository
+
+Gilau, A., 2026b. TicketSalesReport2026Mock [Source code] Available at: <https://github.com/MattGilau/TicketSalesReport2026Mock> [Accessed 18 November 2026].
+
+In-text: (Gilau, 2026b)
+
 ## Reference list
 
 Anthropic, 2026. Claude (Opus 5.5) [Computer program] Available at: <https://claude.ai> [Accessed 18 November 2026].
