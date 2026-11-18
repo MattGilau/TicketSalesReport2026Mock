@@ -5,8 +5,18 @@ package st10438081group2.ticketsalesreport;
  * Season names are stored in a 1D array and the ticket sales in a 2D array
  * (rows = years, columns = seasons). The calculations are done by TicketSales.
  *
- * AI disclosure: study templates prepared with Claude (Anthropic) were used
- * while revising; this code was typed, adapted and tested by me.
+ * Techniques used: - declaring and populating 1D and 2D arrays (Farrell, 2023,
+ * pp.267-271, 300); - nested for loops to print rows and columns (Farrell,
+ * 2023, p.220); - printf format specifiers to align the columns (Farrell, 2023,
+ * p.597); - Math.round to round the average to a whole number (Farrell, 2023,
+ * pp.141-144).
+ *
+ * References: Farrell, J., 2023. Java programming. 10th ed. Boston: Cengage.
+ *
+ * AI disclosure: Claude (Anthropic, 2026) was used before the exam to prepare
+ * study notes and practice code. This file was typed and tested by me.
+ * Anthropic, 2026. Claude (Opus 5.5) [Computer program] Available at:
+ * <https://claude.ai> [Accessed 18 November 2026].
  *
  * @author adria
  */
@@ -21,7 +31,7 @@ public class TicketSalesReport {
         // 2D array: rows = years, columns = seasons
         int[][] ticketSales = {
             {420, 310, 180, 390}, // row 0 = Year 1
-            {450, 280, 220, 390}  // row 1 = Year 2
+            {450, 280, 220, 390} // row 1 = Year 2
         };
 
         // object that does the calculations
@@ -32,7 +42,7 @@ public class TicketSalesReport {
         System.out.println("THEATRE TICKET SALES REPORT - 2026");
         System.out.println(line);
 
-        // heading row: an empty 8-wide cell, then each season 9 wide
+        // heading row: an empty 8-wide cell, then each season right-aligned in 9
         System.out.printf("%-8s", "");
         for (int col = 0; col < seasons.length; col++) {
             System.out.printf("%9s", seasons[col]);

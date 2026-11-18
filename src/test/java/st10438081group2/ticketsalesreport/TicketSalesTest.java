@@ -4,14 +4,19 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 /**
- * Unit tests for TicketSales (2026 mock, Q.1.3).
- * Test names match the paper exactly.
+ * Unit tests for TicketSales (2026 mock, Q.1.3). The test names are copied
+ * exactly from the paper. assertEquals takes the expected value first and the
+ * actual value second; a delta is used when comparing doubles (JUnit, s.a.).
+ *
+ * References: JUnit, [s.a.]. JUnit 5 user guide. [online] Available at:
+ * <https://junit.org/junit5/docs/current/user-guide/> [Accessed 18 November
+ * 2026].
  *
  * @author adria
  */
 public class TicketSalesTest {
 
-    // same data as the paper, so the expected answers are known
+    // the same data as the paper, so the expected answers are known
     private final int[][] ticketSales = {
         {420, 310, 180, 390},
         {450, 280, 220, 390}
